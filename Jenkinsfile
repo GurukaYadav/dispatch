@@ -1,17 +1,26 @@
-pipeline {
-  agent any
+@Library('jenkins-shared-library@main') _
+env.COMPONENT='dispatch'
+golang()
 
-  stages {
-    stage('Install dependencies, Compile and Package') {
-      steps {
-        sh '''go mod init dispatch
-              go get
-              go build
-        '''
-      }
-    }
 
-  }
 
-}
+
+
+
+// pipeline {
+//   agent any
+//
+//   stages {
+//     stage('Install dependencies, Compile and Package') {
+//       steps {
+//         sh '''go mod init dispatch
+//               go get
+//               go build
+//         '''
+//       }
+//     }
+//
+//   }
+//
+// }
 
