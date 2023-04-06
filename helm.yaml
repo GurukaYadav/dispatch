@@ -1,3 +1,4 @@
 appName: dispatch
 service:
+  type: ClusterIP
   targetPort: 8080
