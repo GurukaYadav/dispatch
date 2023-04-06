@@ -1,1 +1,3 @@
 appName: dispatch
+service:
+  targetPort: 8080
