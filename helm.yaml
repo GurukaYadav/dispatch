@@ -4,3 +4,9 @@ service:
   port: 8080
 ingress:
   enabled: false
+configMap:
+  enabled: true
+  data:
+    AMQP_HOST: rabbitmq-prod.roboshop.internal
+    AMQP_USER: roboshop
+    AMQP_PASS: roboshop123
