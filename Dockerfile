@@ -6,4 +6,4 @@ WORKDIR /app
 USER roboshop
 COPY main.go /app
 COPY dispatch /app
-ENTRYPOINT ["dispatch"]
+ENTRYPOINT ["/app/dispatch"]
