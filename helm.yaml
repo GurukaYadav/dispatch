@@ -36,5 +36,5 @@ probes:
     initialDelaySeconds: 5
     periodSeconds: 10
   readiness:
-    initialDelaySeconds: 5
+    initialDelaySeconds: 20
     periodSeconds: 10
