@@ -32,14 +32,14 @@ hpa:
 #As dispatch is not the application component(just taking the orders for rabbitmq), we are not using health checks for dispatch
 
 probes:
-  enabled: false
-#  endpoint: /health
-#  port: 8080
-#  liveness:
-#    initialDelaySeconds: 10
-#    periodSeconds: 10
-#  readiness:
-#    initialDelaySeconds: 15
-#    periodSeconds: 10
+  enabled: true
+  endpoint: /health
+  port: 8080
+  liveness:
+    initialDelaySeconds: 10
+    periodSeconds: 10
+  readiness:
+    initialDelaySeconds: 15
+    periodSeconds: 10
 
-#As we have disabled the health, we dont need above values
+#As we have disabled the health, we don't need above values
