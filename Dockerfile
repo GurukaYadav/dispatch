@@ -7,3 +7,4 @@ COPY dispatch .
 RUN chown roboshop:roboshop -R /app
 USER roboshop
 ENTRYPOINT ["/app/dispatch"]
+
